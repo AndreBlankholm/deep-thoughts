@@ -1,19 +1,12 @@
-// import the GrapghQL tagged template function
-const { gql } = require('apllo-server-express');
+// import the gql tagged template function
+const { gql } = require('apollo-server-express');
 
-
-//create your own typDef's
-// const typeDefs = gql``;
-
+// create our typeDefs
 const typeDefs = gql`
-
-type Query {
+  type Query {
     helloWorld: String
-}
-
+  }
 `;
 
-
-// export typeDefs
-
+// export the typeDefs
 module.exports = typeDefs;
